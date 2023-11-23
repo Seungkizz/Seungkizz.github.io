@@ -4,38 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3299333b21.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>포토폴리오 | 프론트엔드 김승기</title>
 </head>
 
 <body>
-    <div class="info">
-        <h2><span>My Info</span></h2>
-        <div>
-            <ul>ABOUT ME
-                <li>김 승기</li>
-                <li>1992.10.6</li>
-                <li>유한대학교 컴퓨터소프트웨어학과 졸업</li>
-            </ul>
+    <div class="container">
+        <div class="info">
+            <h2><span>My Info</span></h2>
+            <div>
+                <ul>ABOUT ME
+                    <li>김 승기</li>
+                    <li>1992.10.6</li>
+                    <li>유한대학교 컴퓨터소프트웨어학과 졸업</li>
+                </ul>
+            </div>
+            <div>
+                <ul>CHANNEL
+                    <li><a href="https://github.com/Seungkizz">github</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>EDUCATION
+                    <li>
+                        HRM 구축을 통한 클라우드 REST 스프링 프레임워크 <br>솔루션 개발자 과정 수료 (2023.02 ~ 2023.08)
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul>CHANNEL
-                <li><a href="https://github.com/Seungkizz">github</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>EDUCATION
-                <li>
-                    HRM 구축을 통한 클라우드 REST 스프링 프레임워크 <br>솔루션 개발자 과정 수료 (2023.02 ~ 2023.08)
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="project">
-        <h2><span>프로젝트</span></h2>
-        <div class="img_area"><img src="./imgs/리액트TODOLIST.png"></div>
-        <a href="https://seungkizz.github.io/react_todo_list/" target="_blank">리액트 TODO_List</a>
+        <div class="portfolio_list">
+            <h2><span>포토폴리오</span></h2>
+            <div class="portfolio_item">
+                <h3>
+                    <span>01.</span>
+                    REACT TODO LIST
+                </h3>
+            </div>
+            <div class="portfolio_detail">
+                <div class="img_area"><img src="./imgs/리액트TODOLIST.png"></div>
+                <div class="summary">
+                    <p>
+                        리액트 학습하며 제작한 페이지입니다.<br /><br />
+                        할 일 추가,삭제,체크 기능이 가능합니다. Styled Components와 함수형 컴포넌트를 사용하여 제작하였습니다.
+                    </p>
+                    <ul class="point">
+                        <li>
+                            <span>React JS</span>
+                        </li>
+                    </ul>
+                    <div class="btn_goto">
+                        <a href="https://seungkizz.github.io/react_todo_list/" target="_blank">바로가기</a>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th id="col1"><i class="fa-brands fa-github"></i></th>
+                                <th id="col2"><a href="https://github.com/Seungkizz/react_todo_list">Github page</a></th>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 
