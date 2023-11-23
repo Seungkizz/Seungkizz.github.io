@@ -31,9 +31,19 @@ body {
 }
 
 /* 포토폴리오 */
+.portfolio_list h2{
+    margin-top: 20px;
+}
+.portfolio_item{
+    margin-top: 60px;
+}
 .portfolio_detail {
     display: flex;
     align-items: center;
+}
+.portfolio_detail_rev{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .portfolio_detail ul {
@@ -90,8 +100,15 @@ td {
     .portfolio_detail {
         height: 300px;
         display: block;
+        height: auto; 
     }
-
+    .portfolio_detail_rev{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio_item{
+        margin-top: 50px;
+    }
     .img_area {
         margin-top: 15px;
     }
