@@ -31,19 +31,14 @@ body {
 }
 
 /* 포토폴리오 */
-.portfolio_list h2{
-    margin-top: 20px;
+.portfolio_list h2 {
+    margin: 25px;
 }
-.portfolio_item{
-    margin-top: 60px;
-}
+
 .portfolio_detail {
+    margin-top: 30px;
     display: flex;
     align-items: center;
-}
-.portfolio_detail_rev{
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .portfolio_detail ul {
@@ -75,20 +70,24 @@ body {
 
 table {
     width: 100%;
-    border-top: 1px solid #333;;
+    border-top: 1px solid #333;
+    ;
     border-collapse: collapse;
     margin-top: 50px;
 }
 
 th,
 td {
-    border-bottom: 1px solid #333;;
+    border-bottom: 1px solid #333;
+    ;
     padding: 10px;
 }
-#col1{
+
+#col1 {
     width: 150px;
 }
-#col2 a:hover{
+
+#col2 a:hover {
     opacity: 0.6;
 }
 
@@ -100,15 +99,13 @@ td {
     .portfolio_detail {
         height: 300px;
         display: block;
-        height: auto; 
+        height: auto;
     }
-    .portfolio_detail_rev{
-        display: flex;
-        flex-direction: column;
-    }
-    .portfolio_item{
+
+    .portfolio_item {
         margin-top: 50px;
     }
+
     .img_area {
         margin-top: 15px;
     }
