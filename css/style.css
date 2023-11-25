@@ -30,13 +30,45 @@ body {
     margin: 0 200px 0 200px;
 }
 
+
+/* 내정보 */
+.info {
+    background-color: #3333;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.info_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_list ul {
+    font-weight: 800;
+}
+
+.info_list ul li {
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .info_list {
+        display: block;
+        justify-content: space-around;
+    }
+
+    .info_list ul {
+        margin: 20px;
+    }
+}
+
 /* 포토폴리오 */
 .portfolio_list h2 {
     margin: 25px;
 }
 
 .portfolio_detail {
-    margin-top: 30px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
 }
