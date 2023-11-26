@@ -51,6 +51,10 @@ body {
     font-weight: 500;
 }
 
+.info_list ul:nth-child(2) li:hover {
+    opacity: 0.6;
+}
+
 @media (max-width: 800px) {
     .info_list {
         display: block;
@@ -176,4 +180,12 @@ td {
 
 .btn_goto:hover {
     opacity: 0.6;
+}
+
+/* footer */
+footer{
+    padding: 30px;
+    margin-top: 80px;
+    border-top: 1px solid #333;
+    text-align: center;
 }
