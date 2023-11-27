@@ -11,6 +11,7 @@
 
 <body>
     <div class="container">
+
         <div class="info">
             <h2><span>My Info</span></h2>
             <div class="info_list">
@@ -56,163 +57,44 @@
 
         <div class="portfolio_list">
             <h2><span>포토폴리오</span></h2>
-            <div class="portfolio_detail">
-                <div class="img_area"><img src="./imgs/리액트TODOLIST.png"></div>
-                <div class="summary">
-                    <h2>
-                        <span>01.</span>
-                        React TODO LIST
-                    </h2>
-                    <p>
-                        리액트 학습하며 제작한 페이지입니다.<br /><br />
-                        할 일 추가,삭제,체크 기능이 가능합니다. Styled Components와 함수형 컴포넌트를 사용하여 제작하였습니다.
-                    </p>
-                    <ul class="point">
-                        <li>
-                            <span>JSX</span>
-                        </li>
-                        <li>
-                            <span>Styled Components</span>
-                        </li>
-                        <li>
-                            <span>React Hooks</span>
-                        </li>
-                    </ul>
-                    <div class="btn_goto">
-                        <a href="https://seungkizz.github.io/react_todo_list/" target="_blank">바로가기</a>
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <th id="col1"><i class="fa-brands fa-github"></i></th>
-                                <th id="col2"><a href="https://github.com/Seungkizz/react_todo_list"
-                                        target="_blank">Github page</a>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
 
-            </div>
+            <script src="js/data.js"></script>
+            <script>
+                const portfolioList = jsonData.portfolioList;
 
-            <div class="portfolio_detail">
-                <div class="img_area"><img src="./imgs/halo.png"></div>
-                <div class="summary">
-                    <h2>
-                        <span>02.</span>
-                        Responsive Web
-                    </h2>
-                    <p>
-                        국비교육과정에서 팀 프로젝트로 진행한 반응형 웹 페이지입니다.<br />
-                    </p>
-                    <ul class="point">
-                        <li><span>HTML</span></li>
-                        <li><span>CSS</span></li>
-                        <li><span>javascript</span></li>
-                        <li><span>Media Query</span></li>
-                    </ul>
-                    <div class="btn_goto">
-                        <a href="https://seungkizz.github.io/HaloCrystal/" target="_blank">바로가기</a>
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <th id="col1"><i class="fa-brands fa-github"></i></th>
-                                <th id="col2"><a
-                                        href="https://github.com/Seungkizz/Seungkizz.github.io/tree/main/HaloCrystal"
-                                        target="_blank">Github
-                                        page</a></th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="portfolio_detail">
-                <div class="img_area"><img src="./imgs/pixabay.png"></div>
-                <div class="summary">
-                    <h2>
-                        <span>03.</span>
-                        React OpenAPI 활용
-                    </h2>
-                    <p>
-                        리액트 학습하며 pixabayAPI를 이용하여 제작한 페이지입니다.<br /><br />
-                        이미지를 검색하여 정보를 제공하고 해당 이미지 클릭 시 다운로드 할 수 있는 링크로 이동하게 됩니다.
-                    </p>
-                    <ul class="point">
-                        <li>
-                            <span>JSX</span>
-                        </li>
-                        <li>
-                            <span>Styled Components</span>
-                        </li>
-                        <li>
-                            <span>React Hooks</span>
-                        </li>
-                        <li>
-                            <span>OpenAPI</span>
-                        </li>
-                    </ul>
-                    <div class="btn_goto">
-                        <a href="https://seungkizz.github.io/pixabay/" target="_blank">바로가기</a>
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <th id="col1"><i class="fa-brands fa-github"></i></th>
-                                <th id="col2"><a href="https://github.com/Seungkizz/pixabay" target="_blank">Github
-                                        page</a>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="portfolio_detail">
-                <div class="img_area"><img src="./imgs/pompom.png"></div>
-                <div class="summary">
-                    <h2>
-                        <span>04.</span>
-                        Spring / Oracle 기반 포토폴리오
-                    </h2>
-                    <p>
-                        국비교육과정에서 Spring과 Oracle 기반의 포토폴리오를 제작하였습니다.<br /><br />
-                        기획안 작성부터 다양한 기능을 하나씩 추가해 나가면서 웹 프로그래밍의 기본기를 확립하고 웹 애플리케이션의 전 과정을 익혔습니다.
-                    </p>
-                    <ul class="point">
-                        <li>
-                            <span>Spring Framework</span>
-                        </li>
-                        <li>
-                            <span>Oracle</span>
-                        </li>
-                        <li>
-                            <span>Maven</span>
-                        </li>
-                        <li>
-                            <span>Mybatis</span>
-                        </li>
-                    </ul>
-                    <div>
-                        <table>
-                            <tr>
-                                <th id="col1"><i class="fa-brands fa-github"></i></th>
-                                <th id="col2"><a href="https://github.com/Seungkizz/pompom" target="_blank">Github
-                                        page</a>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
+                portfolioList.forEach(portfolio => {
+                    document.write(`
+                        <div class="portfolio_detail">
+                            <div class="img_area"><img src="${portfolio.image}"></div>
+                            <div class="summary">
+                                <h2><span>${portfolio.id}.</span> ${portfolio.title}</h2>
+                                <p>${portfolio.description}</p>
+                                <ul class="point">
+                                    ${portfolio.technologies.map(tech => `<li><span>${tech}</span></li>`).join('')}
+                                </ul>
+                                <div class="btn_goto">
+                                    ${portfolio.liveLink
+                            ? `<div class="btn_goto"><a href="${portfolio.liveLink}" target="_blank">바로가기</a></div>`
+                            : ''}
+                                </div>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <th id="col1"><i class="fa-brands fa-github"></i></th>
+                                            <th id="col2"><a href="${portfolio.githubLink}" target="_blank">Github page</a></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    `);
+                });
+            </script>
         </div>
-        <footer>
-            <p>&copy;Seungki corp. All rights Reserved.</p>
-        </footer>
+    </div>
+    <footer>
+        <p>&copy;Seungki corp. All rights Reserved.</p>
+    </footer>
     </div>
 </body>
 
