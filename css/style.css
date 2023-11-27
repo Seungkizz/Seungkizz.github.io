@@ -66,6 +66,35 @@ body {
     }
 }
 
+/* 스킬 */
+.skill {
+    padding: 20px;
+}
+
+.skill_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill_list ul {
+    font-weight: 800;
+}
+
+.skill_list ul li {
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .skill_list {
+        display: block;
+        justify-content: space-around;
+    }
+
+    .skill_list ul {
+        margin: 20px;
+    }
+}
+
 /* 포토폴리오 */
 .portfolio_list h2 {
     margin: 25px;
@@ -99,6 +128,7 @@ body {
     flex-grow: 1;
     margin-top: 10px;
 }
+
 
 .point {
     margin-top: 30px;
@@ -183,7 +213,7 @@ td {
 }
 
 /* footer */
-footer{
+footer {
     padding: 30px;
     margin-top: 80px;
     border-top: 1px solid #333;
