@@ -1,102 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3299333b21.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>포토폴리오 | 웹 개발 김승기</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="백엔드 개발자 김승기. 결제 승인·취소, VAN·EMR 연동, 정산 대사와 배치 처리, 서비스 운영 경험을 소개합니다.">
+  <meta name="theme-color" content="#F8FCFF">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="김승기 | 결제·정산 백엔드 개발자">
+  <meta property="og:description" content="리테일 승인서버 현대화부터 결제중계·정산·운영까지. 백엔드 개발 경험을 확인하세요.">
+  <meta property="og:url" content="https://seungkizz.github.io/">
+  <link rel="canonical" href="https://seungkizz.github.io/">
+  <link rel="icon" href="/imgs/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/career.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <title>김승기 | 결제·정산 백엔드 개발자</title>
 </head>
-
 <body>
-    <div class="container">
-
-        <div class="info">
-            <h2><span>My Info</span></h2>
-            <div class="info_list">
-                <ul>ABOUT ME
-                    <li>김 승기</li>
-                    <li>1992.10.6</li>
-                    <li>유한대학교 컴퓨터소프트웨어학과 졸업</li>
-                </ul>
-                <ul>CHANNEL
-                    <li><a href="https://github.com/Seungkizz" target="_blank">https://github.com/Seungkizz</a></li>
-                </ul>
-                <ul>EDUCATION
-                    <li>
-                        HRM 구축을 통한 클라우드 REST 스프링 프레임워크 <br>솔루션 개발자 과정 수료 (2023.02 ~ 2023.08)
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="skill">
-            <h2><span>Skill</span></h2>
-            <div class="skill_list">
-                <ul>HTML
-                    <li>HTML5</li>
-                    <li>웹 표준 / 접근성 준수</li>
-                </ul>
-                <ul>CSS
-                    <li>CSS3</li>
-                    <li>Bootstrap</li>
-                </ul>
-                <ul>JavaScript
-                    <li>바닐라 스크립트</li>
-                    <li>ES6 활용</li>
-                    <li>React 활용</li>
-                </ul>
-                <ul>ETC
-                    <li>Oracle / MySql 기본지식</li>
-                    <li>Spring Framework</li>
-                    <li>Github</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="portfolio_list">
-            <h2><span>포토폴리오</span></h2>
-
-            <script src="js/data.js"></script>
-            <script>
-                const portfolioList = jsonData.portfolioList;
-
-                portfolioList.forEach(portfolio => {
-                    document.write(`
-                        <div class="portfolio_detail">
-                            <div class="img_area"><img src="${portfolio.image}"></div>
-                            <div class="summary">
-                                <h2><span>${portfolio.id}.</span> ${portfolio.title}</h2>
-                                <p>${portfolio.description}</p>
-                                <ul class="point">
-                                    ${portfolio.technologies.map(tech => `<li><span>${tech}</span></li>`).join('')}
-                                </ul>
-                                <div class="btn_goto">
-                                    ${portfolio.liveLink
-                            ? `<div class="btn_goto"><a href="${portfolio.liveLink}" target="_blank">바로가기</a></div>`
-                            : ''}
-                                </div>
-                                <div>
-                                    <table>
-                                        <tr>
-                                            <th id="col1"><i class="fa-brands fa-github"></i></th>
-                                            <th id="col2"><a href="${portfolio.githubLink}" target="_blank">Github page</a></th>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    `);
-                });
-            </script>
-        </div>
-    </div>
-    <footer>
-        <p>&copy;Seungki corp. All rights Reserved.</p>
-    </footer>
-    </div>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="wordmark" href="#home" aria-label="김승기 포트폴리오 홈">seungki<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span> 메뉴</button>
+    <nav id="main-nav" aria-label="주 메뉴"><a href="#about">소개</a><a href="#projects">프로젝트</a><a href="#career">경력</a><a href="#stack">기술</a><a href="#contact">연락</a></nav>
+    <a class="header-github" href="https://github.com/Seungkizz" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div></header>
+  <main id="main">
+    <section id="home" class="hero wrap" aria-labelledby="hero-title">
+      <div><p class="eyebrow">BACKEND DEVELOPER · 김승기</p><h1 id="hero-title">결제의 흐름을 잇는<br><span>백엔드 개발자</span></h1><p class="intro">승인·취소부터 정산까지,<br>거래 데이터의 정합성을 지키는 서비스를 만듭니다.</p><p class="hero-description">현재 리테일 결제중계 승인서버를 담당하며,<br class="desktop-break"> C# 레거시를 Java·Spring으로 전환하고 결제수단 연동과 취소 처리를 개선했습니다.</p><div class="tags core-tags" aria-label="주요 기술"><span>Java</span><span>Spring</span><span>Oracle</span><span>TCP Socket</span><span>REST API</span></div><div class="hero-actions"><a class="button" href="#projects">프로젝트 살펴보기 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">연락하기</a></div></div>
+      <aside class="flow-panel" aria-label="주요 업무 흐름 개념도"><div class="panel-top"><span class="eyebrow">MY DOMAIN</span><span class="status">결제 · 정산</span></div><h2>거래의 시작부터<br>정산의 마무리까지</h2><ol class="flow"><li><span class="flow-number">01</span><div><strong>결제중계</strong><p>EMR ↔ VAN · 승인 / 취소</p></div></li><li><span class="flow-number">02</span><div><strong>거래 대사</strong><p>실시간 거래 ↔ 배치 데이터</p></div></li><li><span class="flow-number">03</span><div><strong>정산 연계</strong><p>청구 파일 · 입금 결과 배치</p></div></li></ol><p class="diagram-note">업무 영역을 요약한 개념도입니다.</p></aside>
+    </section>
+    <section id="about" class="section tint"><div class="wrap"><div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>거래의 정확성과<br class="mobile-break"> 운영의 연속성을 중심에</h2><p>결제 기능 개발과 실제 서비스 운영을 함께 경험했습니다.</p></div><div class="expertise-grid"><article class="card"><span class="card-number">01</span><h3>결제 흐름을 연결합니다</h3><p>EMR과 VAN 사이의 승인·취소 전문 처리, 원거래 검증 기반 부분취소, 토큰 결제·가승인 상태 관리를 구현했습니다.</p><div class="tags"><span>결제중계</span><span>원거래 검증</span></div></article><article class="card"><span class="card-number">02</span><h3>데이터를 대사합니다</h3><p>실시간 거래와 배치 데이터, EMR과 정산서비스의 거래 내역을 대사하고 청구 파일과 입금 결과를 연계했습니다.</p><div class="tags"><span>거래 정합성</span><span>배치 처리</span></div></article><article class="card"><span class="card-number">03</span><h3>운영까지 이어갑니다</h3><p>레거시 코드 리팩토링과 장애 대응, Java 데몬 유지보수부터 Linux 서버 재구축과 백업 전환까지 담당했습니다.</p><div class="tags"><span>리팩토링</span><span>운영 안정화</span></div></article></div><div class="about-context"><h3>연동과 운영 현장에서</h3><p>VAN사 및 병원 EMR과 연결되는 인터페이스를 개발하고, 도입 이후에도 운영 지원과 유지보수를 수행했습니다. 거래고유번호와 승인 원거래를 기준으로 취소를 처리하고, 실시간·배치 데이터를 비교하는 방식으로 거래의 정합성을 다뤘습니다.</p></div></div></section>
+    <section id="projects" class="section wrap"><div class="section-heading"><p class="eyebrow">02 / PROJECTS</p><h2>결제·정산 프로젝트</h2><p>현재 담당 프로젝트의 역할·구현 내용·성과를 한곳에서 확인하세요.</p></div><p class="privacy-note">고객사명은 익명화했습니다. 기간·담당 업무는 경력 자료와 확인된 내용을 기준으로 작성했습니다.</p><div class="project-toolbar" role="group" aria-label="프로젝트 표시 범위"><button type="button" class="filter active" data-filter="featured" aria-pressed="true">대표 프로젝트</button><button type="button" class="filter" data-filter="all" aria-pressed="false">전체 경력 프로젝트 <span>10</span></button></div><p id="project-count" class="sr-only" role="status" aria-live="polite"></p><div id="project-grid" class="project-grid"></div><noscript><p>프로젝트 상세 목록은 JavaScript를 활성화하면 확인할 수 있습니다. 결제중계·부분취소, 토큰 결제·가승인, 정산 대사 및 운영 업무를 수행했습니다.</p></noscript></section>
+    <section id="career" class="section tint"><div class="wrap career-layout"><div class="section-heading"><p class="eyebrow">03 / EXPERIENCE</p><h2>경력의 흐름</h2><div class="company"><h3>리테일 결제중계 승인서버</h3><p>현재 담당 프로젝트</p><p class="muted">2025.01 — 현재</p><p>C# 승인서버를 Java·Spring으로 전환하고 결제수단 확장·취소 API·장애 대응을 담당했습니다.</p></div><div class="company"><h3>가온솔루션</h3><p>백엔드 개발 · 대리</p><p class="muted">프로젝트 참여 이력<br>2024.01 — 2025.03</p></div><p>정산 웹 애플리케이션과 Java 데몬을 개발·유지보수하고, 결제중계 및 서비스 운영을 담당했습니다.</p><p class="caption">표시 기간은 확인된 프로젝트 참여 범위이며, 전체 재직 기간을 의미하지 않습니다.</p></div><ol id="career-timeline" class="timeline"></ol></div></section>
+    <section id="stack" class="section wrap"><div class="section-heading"><p class="eyebrow">04 / TECH STACK</p><h2>실무에서 사용한 기술</h2><p><span class="legend-dot"></span> 핵심 실무 기술 <span class="legend-secondary">테두리 배지 · 기타 경험 기술</span></p></div><div id="stack-grid" class="stack-grid"></div></section>
+    <section id="archive" class="section tint"><div class="wrap"><div class="section-heading"><p class="eyebrow">05 / PROJECT ARCHIVE</p><h2>개발의 기반이 된 작업들</h2><p>기존 개인·교육 프로젝트와 소스 코드를 함께 보실 수 있습니다.</p></div><div id="personal-projects" class="archive-grid"></div></div></section>
+    <section id="contact" class="section wrap contact-section"><div><p class="eyebrow">06 / CONTACT</p><h2>김승기 <span>Backend Developer</span></h2><p>결제중계·정산 서비스 개발 경험에 대해<br>더 이야기 나누고 싶다면 이메일로 연락해 주세요.</p><p class="contact-email">메일: <a href="mailto:hihihisk92@gmail.com">hihihisk92@gmail.com</a></p><div class="hero-actions"><a class="button secondary" href="https://github.com/Seungkizz" target="_blank" rel="noopener noreferrer">GitHub 방문 ↗</a><a class="button secondary" href="https://github.com/Seungkizz?tab=repositories" target="_blank" rel="noopener noreferrer">저장소 살펴보기 ↗</a></div></div><div class="education"><h3>Education</h3><p>유한대학교<br>컴퓨터소프트웨어학과 졸업</p><p>HRM 구축을 통한 클라우드 REST 스프링 프레임워크 솔루션 개발자 과정 수료</p><p class="muted">2023.02 — 2023.08</p></div></section>
+  </main>
+  <footer class="footer wrap"><span>© 김승기</span><span>Backend · Payment · Settlement</span><a href="#home">맨 위로 ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="detail-title"><div class="dialog-bar"><span class="eyebrow">PROJECT DETAIL</span><button class="close-dialog" type="button" aria-label="프로젝트 상세 닫기">닫기 <span aria-hidden="true">×</span></button></div><div id="detail-content"></div></dialog>
 </body>
-
 </html>
-
